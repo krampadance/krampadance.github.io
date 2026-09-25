@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 2
+date: 2014-07-17
+img: DisasterImpactIntelligence.png
+alt: image-alt
+project-date: 2024-2026
+client: Oceanids Project (EU)
+category: LLM, Function Calling, Physical Disasters, Web Development
+description: A tool to collect disaster impact data from public sources. Data is scraped and fed into an LLM in order to extract tabular data from the text. 
+title: Distaster Impact Intelligence
+---

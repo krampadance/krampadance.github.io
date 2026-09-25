@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 5
+date: 2014-07-14
+img: conectadora.png
+alt: image-alt
+project-date: 2022-2024
+client: Weconnect.software
+category: Python, API integrations, Marketplaces, ERP
+description: A project that collects data from the various marketplaces of a company. Updates the ERP with information regarding the inventory status, or invoices and vice versa. Helps keeping data between ERP and marketplaces up to date and in sync.
+title: Conectadora
+---

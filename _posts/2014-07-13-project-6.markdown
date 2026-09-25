@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 6
+date: 2014-07-15
+img: effectiveprofiles.png
+alt: image-alt
+project-date: 2015-2018
+client: Weconnect.nl
+category: MVC, MeteorJS, Social Media, API Integrations, MongoDB, Web Development
+description: A web app that providing information and insights of the social media presence of a company. Worked on data collection, data analysis and data visualisation.
+title: Effective Profiles
+---
