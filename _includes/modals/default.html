@@ -1,0 +1,65 @@
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ include.post.modal-id }}" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ include.post.title }}</h2>
+            {% if include.post.overview %}
+            <p class="project-overview">{{ include.post.overview }}</p>
+            {% endif %}
+            <hr class="star-primary">
+            <img src="img/portfolio/{{ include.post.img }}" class="img-responsive img-centered" alt="{{ include.post.alt }}">
+            <div class="project-meta">
+              {% if include.post.client %}
+              <span class="project-meta-label">Organization</span>
+              <strong>{{ include.post.client }}</strong>
+              {% endif %}
+              {% if include.post.period %}
+              <span class="project-meta-separator">•</span>
+              <span class="project-meta-label">Period</span>
+              <strong>{{ include.post.period }}</strong>
+              {% endif %}
+              {% if include.post.role %}
+              <span class="project-meta-separator">•</span>
+              <span class="project-meta-label">Role</span>
+              <strong>{{ include.post.role }}</strong>
+              {% endif %}
+            </div>
+            {% if include.post.description %}
+            <div class="project-section">
+              <h3 class="project-section-title">Description</h3>
+              <p>{{ include.post.description }}</p>
+            </div>
+            {% endif %}
+            {% if include.post.challenge %}
+            <div class="project-section">
+              <h3 class="project-section-title">Challenge</h3>
+              <p>{{ include.post.challenge }}</p>
+            </div>
+            {% endif %}
+            {% if include.post.contribution %}
+            <div class="project-section">
+              <h3 class="project-section-title">Contribution</h3>
+              <p>{{ include.post.contribution }}</p>
+            </div>
+            {% endif %}
+            {% if include.post.category %}
+            <div class="project-section">
+              <h3 class="project-section-title"></h3>
+              {% include modals/project-tags.html categories=include.post.category %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

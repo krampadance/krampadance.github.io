@@ -1,0 +1,9 @@
+{% assign project_tags = include.categories | split: ',' %}
+<ul class="project-tags">
+  {% for project_tag in project_tags %}
+  {% assign clean_tag = project_tag | strip %}
+  {% if clean_tag != '' %}
+  <li>{{ clean_tag }}</li>
+  {% endif %}
+  {% endfor %}
+</ul>

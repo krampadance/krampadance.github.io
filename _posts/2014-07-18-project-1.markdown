@@ -4,9 +4,13 @@ modal-id: 1
 date: 2014-07-18
 img: oceanwise.jpg
 alt: image-alt
-project-date: 2024-2026
+period: 2024-2026
 client: WTOC, Oceanids Project (EU)
 category: ChatBot, RAG, LLM, Web Development
-description: Oceanwise is a chatbot developed in the context of Oceanids project in order to support stakeholders(Port Authorities) with information regarding crisis management. It is developed using FastAPI, Celery, Elasticsearch as core technologies and communicates with external LLMs via API.
+overview: A chatbot to support decision making
+description: Oceanwise is an AI-powered chatbot developed within the Oceanids project to support port authorities with crisis management and decision-making. It combines structured data and external LLMs to provide stakeholders with fast, conversational access to relevant information. Built with FastAPI, Celery, and Elasticsearch, the platform integrates multiple services through a scalable backend architecture.
 title: Oceanwise
+challenge: Provide a more intuitive, human-like way to interact with this data and support faster, more informed decision-making.
+contribution: Scraping, document parsing, RAG and frontend development
+role: Software Engineer
 ---

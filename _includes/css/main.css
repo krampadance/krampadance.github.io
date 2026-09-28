@@ -246,7 +246,8 @@ section#skills .skills-group h3 {
     color: #fff;
 }
 
-section#skills .skills-tags {
+section#skills .skills-tags,
+.portfolio-modal .project-tags {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -256,14 +257,18 @@ section#skills .skills-tags {
     list-style: none;
 }
 
-section#skills .skills-tags li {
+section#skills .skills-tags li,
+.portfolio-modal .project-tags li {
     padding: 10px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
     font-size: 0.95em;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.02em;
+}
+
+section#skills .skills-tags li {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
     color: #fff;
 }
 
@@ -275,6 +280,92 @@ section#skills .skills-tags--skills li {
 section#skills .skills-tags--tech li {
     background: rgba(31, 41, 55, 0.28);
     border-color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio-modal .project-tags {
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.portfolio-modal .project-tags li {
+    border: 1px solid #{{ site.color.primary }};
+    background: rgba(63, 108, 122, 0.1);
+    color: #{{ site.color.primary }};
+}
+
+.portfolio-modal .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    margin: 24px 0 28px;
+    padding: 16px 20px;
+    border: 1px solid rgba(63, 108, 122, 0.18);
+    border-radius: 12px;
+    background: rgba(63, 108, 122, 0.05);
+    text-align: center;
+}
+
+.portfolio-modal .project-meta-label {
+    display: inline;
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(47, 79, 89, 0.6);
+}
+
+.portfolio-modal .project-meta strong {
+    display: inline;
+    margin-left: 4px;
+    font-size: 0.95em;
+    color: #{{ site.color.secondary }};
+    font-weight: 600;
+}
+
+.portfolio-modal .project-meta-separator {
+    display: inline;
+    margin: 0 2px;
+    color: rgba(47, 79, 89, 0.35);
+    font-size: 0.9em;
+}
+
+.portfolio-modal .project-overview {
+    margin: 12px 0 0;
+    font-size: 1.05em;
+    line-height: 1.6;
+    font-style: italic;
+    color: rgba(47, 79, 89, 0.8);
+}
+
+.portfolio-modal .project-section {
+    margin-top: 28px;
+}
+
+.portfolio-modal .project-section-title {
+    margin: 0 0 12px;
+    font-size: 0.95em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: #{{ site.color.secondary }};
+}
+
+.portfolio-modal .project-section p {
+    margin: 0;
+    font-size: 0.98em;
+    line-height: 1.7;
+    color: #2a2a2a;
+    text-align: left;
+}
+
+@media(max-width:767px) {
+    .portfolio-modal .project-meta-item {
+        width: 100%;
+    }
 }
 
 section#interests .interests-intro {
@@ -557,13 +648,15 @@ footer .footer-below {
 }
 
 .portfolio-modal .close-modal {
-    position: absolute;
+    position: sticky;
     top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
+    z-index: 1060;
+    margin-left: auto;
 }
 
 .portfolio-modal .close-modal:hover {
@@ -573,8 +666,8 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
-    height: 75px;
-    margin-left: 35px;
+    height: 50px;
+    margin-left: 24px;
     background-color: #{{ site.color.secondary }};
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -584,7 +677,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
-    height: 75px;
+    height: 50px;
     background-color: #{{ site.color.secondary }};
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
