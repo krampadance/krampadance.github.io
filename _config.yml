@@ -40,7 +40,9 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
-    url: http://github.com/krampadance
+    url: https://github.com/krampadance
+  - title: linkedin
+    url: https://www.linkedin.com/in/georgios-lampropoulos-1736bb90/
 
 # Postal address (add as many lines as necessary)
 address:
